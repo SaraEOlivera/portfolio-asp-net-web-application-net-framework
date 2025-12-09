@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MiMaster.master.cs" Inherits="ejercicioFinal.MiMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Portfolio Sara E. Olivera</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" runat="server" href="~/images/logo.svg" type="image/svg+xml" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS propio -->
+    <link runat="server" href="~/content-css/estilosMaster.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <main>
+            <nav>
+                <div class="contenedor-nav">
+                    <div class="nav-izq">
+                        <a href="#inicio" class="logo-nav">
+                            <i class="bi bi-code-square"></i>
+                        </a>
+                    </div>
+                    <div class="nav-derecha">
+                        <ul>
+                            <li><a runat="server" href="Proyectos.aspx" class="link-nav">Proyectos</a></li>
+                            <li><a runat="server" href="SobreMi.aspx" class="link-nav">Sobre Mi</a></li>
+                            <li><a runat="server" href="Contacto.aspx" class="link-nav">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer>
+                <div class="contenedor-footer">
+                    <p>Sara E. Olivera 2025</p>
+                    <div class="contenedor-iconos">
+                        <a href="https://github.com/SaraEOlivera?tab=repositories" target="_blank" rel="noopener noreferrer" class="iconos">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="mailto: saraeolivera@gmail.com" target="_blank" rel="noopener noreferrer" class="iconos">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </footer>
+        </main>
+    </form>
+</body>
+</html>
