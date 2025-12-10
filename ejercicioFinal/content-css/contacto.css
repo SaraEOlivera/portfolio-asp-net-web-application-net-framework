@@ -1,0 +1,79 @@
+﻿/***************** Seccion Formulario *********************************/
+.seccion-formulario {
+    background-color: var(--color-footer);
+}
+
+.contenedor-formulario {
+    background-color: var(--color-footer);
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 5px solid var(--segundo-color);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+    .formulario label {
+        font-family: var(--fuente-texto);
+        font-size: 1.3rem;
+        color: var(--backgroud-extremos);
+    }
+
+    .formulario input,
+    .formulario textarea {
+        background-color: var(--color-footer);
+        border: none;
+        border-bottom: 2px solid var(--segundo-color);
+        margin-bottom: 2.1rem;
+        padding-top: 2px;
+        outline: none;
+    }
+
+    .formulario textarea {
+        height: 150px;
+    }
+
+.btn-formulario {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--backgroud-extremos);
+    background: linear-gradient(90deg, #cc8800, #bfbfbf);
+    background-size: 200%;
+    background-position: left;
+    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+    width: 90px;
+    height: 50px;
+    border: 2px solid var(--segundo-color);
+    border-radius: 7px;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation-name: botonEnviar;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes botonEnviar {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.btn-formulario:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px -2px #00000033;
+  
+}
