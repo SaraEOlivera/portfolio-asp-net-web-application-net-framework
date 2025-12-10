@@ -112,7 +112,7 @@ nav {
 
 .perfil {
     margin: auto;
-    width: 350px;
+    width: 300px;
     height: 300px;
     border-radius: 50%;
     border: 3px solid var(--backgroud-extremos);
@@ -121,6 +121,22 @@ nav {
 
     .perfil:hover {
         transform: scale(1.1) rotate(35deg);
+    }
+
+/*************** Estilo gral secciones  **************************/
+
+.seccion {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-footer);
+    padding: 2rem 0;
+}
+
+    .seccion h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: var(--fuente-titulos);
+        font-size: var(--size-titulos);
     }
 
 /*****************Footer**************************************/

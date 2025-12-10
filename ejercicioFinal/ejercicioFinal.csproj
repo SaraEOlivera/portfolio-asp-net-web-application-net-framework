@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Contacto.aspx" />
     <Content Include="content-css\estilosMaster.css" />
+    <Content Include="content-css\proyectos.css" />
     <Content Include="DefaultConMaster.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Proyectos.aspx" />
